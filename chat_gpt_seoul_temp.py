@@ -12,7 +12,7 @@ with open(file_path, 'r') as file:
     reader = csv.reader(file)
     header = next(reader)  # 첫 번째 줄은 헤더 (열 이름)
 
-    # '날짜'와 '최고기온'에 해당하는 인덱스 찾기
+    # 'date'와 'max_temp'에 해당하는 인덱스 찾기
     date_index = header.index('date')
     max_temp_index = header.index('max_temp')
 
